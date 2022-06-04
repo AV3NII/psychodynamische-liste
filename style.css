@@ -40,7 +40,7 @@
 
     --main-hfilter: #1b3a4b;
     --main-hfilter2: #065a60;
-    --main-placeholderfilter: 10;
+    --main-placeholderfilter: 1;
     --main-tbackground: #1f1f1f;
 
     --main-hoverbg: #01465d;
@@ -87,7 +87,7 @@ header img{
     position: relative;
     max-height: 65px;
     opacity: 1;
-    filter: brightness(10);
+    filter: invert(1);
     
 }
 
@@ -301,7 +301,7 @@ img{
     
     max-width: 300px;
     width: 40vw;
-    filter: brightness(var(--main-placeholderfilter));
+    filter: invert(var(--main-placeholderfilter));
 }
 
 .left-right {
