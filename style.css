@@ -1,11 +1,17 @@
-
+@font-face {
+    font-family: azo;
+    src: url(/fonts/Azonix.otf);
+}
 
 @font-face {
     font-family: cov_b;
     src: url(/fonts/Coves\ Bold.otf);
 }
 
-
+@font-face {
+    font-family: cov_l;
+    src: url(/fonts/Coves\ Light.otf);
+}
 :root,
 :root.light{
 
@@ -19,6 +25,8 @@
     --main-tbackground: #f9f9f9;
 
     --main-hoverbg: #01465d;
+
+    --main-bordercolor: #5753539b;
 
 
     --main-htextColor: #f8f9fa;
@@ -35,8 +43,9 @@
     --main-placeholderfilter: 10;
     --main-tbackground: #1f1f1f;
 
-    --main-light2: #01465d;
+    --main-hoverbg: #01465d;
 
+    --main-bordercolor: #09090995;
 
     --main-htextColor: #f8f9fa;
     --main-htextColor1: #acacac;
@@ -44,7 +53,7 @@
 }
 
 *{
-    font-family: 'cov_b','Open Sans';
+    font-family: 'cov_b', 'azo','Open Sans';
     color: var(--main-ttextColor);
 }
 body{
@@ -193,15 +202,24 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 
 main{
     align-content: center;
-
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 70px;
+    padding-right: 70px;
     
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+}
+
+img{
+    border-color: var(--main-bordercolor);
+    border-width: 3px;
 }
 
 .darkmode-switch{
@@ -261,12 +279,17 @@ main{
 
 #about {
     display: block;
-    padding-left: 100px;
-    padding-right: 100px;
+    
     
     text-align: center;
     
     
+}
+
+
+#about p{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #blankln{
@@ -284,14 +307,15 @@ main{
 .left-right {
     display: inline-grid;
     grid-template-columns: 1fr 2fr;
-    margin-left: 100px;
-    margin-right: 100px;
+    
     gap: 60px;
     
 }
 
 
 .left-right img{
+    max-width: 200px;
+    margin: auto;
     width : 100%;
     border-style: solid;
     aspect-ratio: 1;
@@ -312,14 +336,15 @@ main{
     display: inline-grid;
     grid-template-columns: 2fr 1fr;
     
-    margin-left: 100px;
-    margin-right: 100px;
+    
     gap: 60px;
     
 
 }
 
 .right-left img {
+    max-width: 200px;
+    margin: auto;
     width : 100%;
     border-radius: 50%;
     object-fit: cover;

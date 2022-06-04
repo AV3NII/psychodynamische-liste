@@ -35,7 +35,9 @@
 .gridbox img{
     aspect-ratio: 1;
     object-fit: cover;
-    max-width: 100%;
+    
+    width: 100%;
+    
     border-style: solid;
     border-radius: 50%;
     
@@ -46,10 +48,17 @@
     margin-right: 15px;
 }
 
+@media (min-width: 0px) {
+    .grid{
+        margin-left: 0px;
+        margin-right: 0px;
+   }
+}
+
 @media (min-width: 450px){
-   .grid{
-        margin-left: 100px;
-        margin-right: 100px;
+    .grid{
+        margin-left: 50px;
+        margin-right: 50px;
    } 
 }
 
@@ -58,6 +67,11 @@
          margin-left: 120px;
          margin-right: 120px;
     } 
+    main{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
  }
 
 @media (min-width: 620px){
