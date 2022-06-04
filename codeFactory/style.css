@@ -1,17 +1,11 @@
-@font-face {
-    font-family: azo;
-    src: url(/fonts/Azonix.otf);
-}
+
 
 @font-face {
     font-family: cov_b;
     src: url(/fonts/Coves\ Bold.otf);
 }
 
-@font-face {
-    font-family: cov_l;
-    src: url(/fonts/Coves\ Light.otf);
-}
+
 :root,
 :root.light{
 
@@ -50,7 +44,7 @@
 }
 
 *{
-    font-family: 'cov_b', 'azo','Open Sans';
+    font-family: 'cov_b','Open Sans';
     color: var(--main-ttextColor);
 }
 body{
