@@ -17,7 +17,7 @@
 
 
     --main-radius: 5px;
-    --main-padding:5px;
+    --main-padding:10px;
 
     --main-hfilter: #1b3a4b;
     --main-hfilter2: #065a6085;
@@ -36,7 +36,7 @@
 
 :root.dark{
     --main-radius: 5px;
-    --main-padding:5px;
+    --main-padding:10px;
 
     --main-hfilter: #1b3a4b;
     --main-hfilter2: #065a60;
@@ -215,6 +215,7 @@ main{
     
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
 }
 
 img{
@@ -372,6 +373,8 @@ img{
 }
 
 
+
+
 footer{
     align-content: center;
     align-self: center;
@@ -390,6 +393,39 @@ footer #about{
 
 
 
+
+
+
+
+
+
+
+select{
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--main-hfilter2);
+    color: var(--main-ttextColor);
+    grid-area: 'sel';
+
+}
+
+#submit{
+    display: flex;
+    width:150px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    color: var(--main-ttextColor);
+    background-color: var(--main-hfilter2);
+}
+
+
+
+#ans{
+    display:none;
+}
 
 
 
@@ -500,15 +536,22 @@ footer #about{
         grid-area: text;
     }
 
-    #service{
+    .left-right, .right-left{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
         'img'
         'text'
-        
         ;
+        grid-template-areas: 
+        'text'
+        'sel'
+        ;
+
+        
     }
+
+    
 
 
 }
