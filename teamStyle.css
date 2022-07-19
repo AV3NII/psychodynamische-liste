@@ -4,9 +4,10 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-gap: 15px;
+    grid-gap: 10px;
     row-gap: 70px;
     padding: 16px;
+    margin-bottom: 80px;
     
     grid-template-columns: 1fr;
     
@@ -17,7 +18,7 @@
 .gridbox{
     text-align: flex;
     padding: 20px;
-    height: 400px;
+    height: 300px;
     border-radius: 5%;
     border-style: none;
     

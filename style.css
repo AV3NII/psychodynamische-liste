@@ -21,6 +21,8 @@
 
     --main-hfilter: #1b3a4b;
     --main-hfilter2: #065a60;
+    --main-hOpa: 0.85;
+
     --main-placeholderfilter: 0;
     --main-tbackground: #f9f9f9;
 
@@ -40,6 +42,8 @@
 
     --main-hfilter: #1b3a4b;
     --main-hfilter2: #065a60;
+    --main-hOpa: 0.85;
+
     --main-placeholderfilter: 1;
     --main-tbackground: #1f1f1f;
 
@@ -54,11 +58,17 @@
 
 *{
     font-family: 'cov_b', 'azo','Open Sans';
-    color: var(--main-ttextColor);
+    
 }
+
+* footer{
+    color:#f8f9fa;
+}
+
 body{
     background: var(--main-tbackground);
     margin: 0px;
+    color: var(--main-ttextColor);
 }
 
 .navbar{
@@ -85,7 +95,8 @@ body{
 
 header img{
     position: relative;
-    max-height: 65px;
+    margin-left: 30px;
+    max-height: 55px;
     opacity: 1;
     filter: invert(1);
     
@@ -144,7 +155,7 @@ nav .menu a.isActive, nav .menu a:hover{
     left: 0;
     right: 0;
     min-height: 250px;
-    opacity: 0.6;
+    opacity: var(--main-hOpa);
     background: linear-gradient(to bottom, var(--main-hfilter), var(--main-hfilter2));
     position: absolute;
     background-position: center;
@@ -156,8 +167,8 @@ nav .menu a.isActive, nav .menu a:hover{
 .headWrap .text{
     z-index: 2;
     color: var(--main-htextColor);
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: bolder;
     position: absolute;
     padding-top: 60px;
 }
@@ -208,7 +219,7 @@ section{
 
 main{
     align-content: center;
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
     padding-left: 70px;
     padding-right: 70px;
@@ -383,11 +394,13 @@ footer{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     border-top: none;
+    color:#f8f9fa;
+    
 }
 
 footer #about{
     padding: 50px;
-    
+    color:#f8f9fa;
 }
 
 
@@ -405,7 +418,7 @@ select{
     margin-left: auto;
     margin-right: auto;
     background-color: var(--main-hfilter2);
-    color: var(--main-ttextColor);
+    color: var(--main-htextColor);
     grid-area: 'sel';
 
 }
@@ -436,7 +449,7 @@ select{
 
 
 
-@media (max-width: 450px){
+@media (max-width: 480px){
     main{
         padding-left: 0px;
         padding-right: 0px;
