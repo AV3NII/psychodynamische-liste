@@ -41,7 +41,7 @@ window.onload=function(){
         if (formAnswers[0] == true){
             option1.querySelector('img').src = './images/ticked.png';
         }else{
-            option1.querySelector('img').src = './images/Venue.jpg';
+            option1.querySelector('img').src = './images/Event.jpg';
         }
 
     })
@@ -54,7 +54,7 @@ window.onload=function(){
         if (formAnswers[1] == true){
             option2.querySelector('img').src = './images/ticked.png';
         }else{
-            option2.querySelector('img').src = './images/Event.jpg';
+            option2.querySelector('img').src = './images/Venue.jpg';
         }
 
     })
@@ -109,7 +109,7 @@ function submit(){
     
     
     factorDomain = 1.0;
-    console.log(people)
+    
     if (domain == 1){
         factorDomain = 1;
     }else if(domain == 2){
@@ -122,7 +122,8 @@ function submit(){
     übernachtungsP = 80;
     labSpace = 200 * factorDomain * isEquipment;
 
-    talentCostsPerDay = ernährungsP + übernachtungsP + labSpace;
+    talentCostsPerDayPerPerson = ernährungsP + übernachtungsP + labSpace;
+
 
     teamgröße = 7;
     medianOfInterv = 0;
@@ -138,15 +139,22 @@ function submit(){
         locationFactor = 1;
     }
 
-    gruppenCount = medianOfInterv % teamgröße;
-
+    talentCostsPerDay = talentCostsPerDayPerPerson * medianOfInterv;
+    
+    gruppenCount = Math.floor(medianOfInterv / teamgröße);
+    console.log("gruppencount:" + gruppenCount);
     supervisorPerDay = 1000 * gruppenCount; // pro Tag
+    console.log("supervisorPerDay:" + supervisorPerDay);
     videoAnalystPerTeam = 200 * gruppenCount; 
+    console.log("videoAnalystPerTeam:" + videoAnalystPerTeam);
     eventPlaner = 350;
+    console.log("eventPlaner:" + eventPlaner);
 
     costPerHappening = 5000;
-    locationPerDay = 30 * medianOfInterv * locationFactor;
+    locationPerDay = 30 * medianOfInterv * locationFactor * isVenue;
+    console.log("locationPerDay:" + locationPerDay);
 
+    
     happeningCount = 0;
     days = 0;
     if (duration === '1'){
@@ -159,15 +167,19 @@ function submit(){
         days = 12;
         happeningCount = 4;
     }
-    eventCostsPerDay = locationPerDay + supervisorPerDay + videoAnalystPerTeam + eventPlaner + (costPerHappening * happeningCount / days) * isEntertainment;
-   
+    entertainmentPerDay = (costPerHappening * happeningCount / days)* isEntertainment;
+    console.log("entertainmentPerDay:" + entertainmentPerDay);
+
+    eventCostsPerDay = locationPerDay + supervisorPerDay + videoAnalystPerTeam + eventPlaner + entertainmentPerDay;
+    console.log("eventCostsPerDay" + eventCostsPerDay);
+    console.log("talentCostsPerDay:" + talentCostsPerDay);
     
-    bufferedSum = (talentCostsPerDay + eventCostsPerDay)*locationFactor * days ;
+    bufferedSum = (talentCostsPerDay + eventCostsPerDay) * days ;
     sumWithRevenue = bufferedSum + (bufferedSum*0.4);
     finalSum = Math.floor(sumWithRevenue/100)*100;
 
     priceTag.innerHTML =  finalSum + " €";
-    
+    console.log("---------------------------------------------------");
 
 }
 
