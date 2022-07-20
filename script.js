@@ -109,13 +109,13 @@ function submit(){
     
     
     factorDomain = 1.0;
-    console.log(domain)
+    console.log(people)
     if (domain == 1){
-        factorDomain = 0.75;
+        factorDomain = 1;
     }else if(domain == 2){
-        factorDomain = 1.5;
+        factorDomain = 2;
     }else if(domain = 3){
-        factorDomain = 1.2;
+        factorDomain = 1.5;
     }
 
     ernährungsP = 50; // € / tag pro person
@@ -131,16 +131,16 @@ function submit(){
         medianOfInterv = 40;
         locationFactor = 2;
     }else if(people == 2){
-        medianOfInterv = 75;
-        locationFactor = 1;
+        medianOfInterv = 65;
+        locationFactor = 1.5;
     }else if(people == 3){
         medianOfInterv = 100;
-        locationFactor = 0.8;
+        locationFactor = 1;
     }
 
     gruppenCount = medianOfInterv % teamgröße;
 
-    supervisorPerTeam = 1000 * gruppenCount; // pro Tag
+    supervisorPerDay = 1000 * gruppenCount; // pro Tag
     videoAnalystPerTeam = 200 * gruppenCount; 
     eventPlaner = 350;
 
@@ -159,12 +159,12 @@ function submit(){
         days = 12;
         happeningCount = 4;
     }
-    eventCostsPerDay = locationPerDay + supervisorPerTeam + videoAnalystPerTeam + eventPlaner + (costPerHappening * happeningCount / days) * isEntertainment;
+    eventCostsPerDay = locationPerDay + supervisorPerDay + videoAnalystPerTeam + eventPlaner + (costPerHappening * happeningCount / days) * isEntertainment;
    
     
     bufferedSum = (talentCostsPerDay + eventCostsPerDay)*locationFactor * days ;
     sumWithRevenue = bufferedSum + (bufferedSum*0.4);
-    finalSum = Math.floor(sumWithRevenue);
+    finalSum = Math.floor(sumWithRevenue/100)*100;
 
     priceTag.innerHTML =  finalSum + " €";
     
