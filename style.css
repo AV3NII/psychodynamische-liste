@@ -21,8 +21,6 @@
 
     --main-hfilter: #1b3a4b;
     --main-hfilter2: #065a60;
-    --main-hOpa: 0.85;
-
     --main-placeholderfilter: 0;
     --main-tbackground: #f9f9f9;
 
@@ -42,8 +40,6 @@
 
     --main-hfilter: #1b3a4b;
     --main-hfilter2: #065a60;
-    --main-hOpa: 0.85;
-
     --main-placeholderfilter: 1;
     --main-tbackground: #1f1f1f;
 
@@ -58,17 +54,11 @@
 
 *{
     font-family: 'cov_b', 'azo','Open Sans';
-    
+    color: var(--main-ttextColor);
 }
-
-* footer{
-    color:#f8f9fa;
-}
-
 body{
     background: var(--main-tbackground);
     margin: 0px;
-    color: var(--main-ttextColor);
 }
 
 .navbar{
@@ -95,8 +85,7 @@ body{
 
 header img{
     position: relative;
-    margin-left: 30px;
-    max-height: 55px;
+    max-height: 65px;
     opacity: 1;
     filter: invert(1);
     
@@ -155,7 +144,7 @@ nav .menu a.isActive, nav .menu a:hover{
     left: 0;
     right: 0;
     min-height: 250px;
-    opacity: var(--main-hOpa);
+    opacity: 0.6;
     background: linear-gradient(to bottom, var(--main-hfilter), var(--main-hfilter2));
     position: absolute;
     background-position: center;
@@ -167,8 +156,8 @@ nav .menu a.isActive, nav .menu a:hover{
 .headWrap .text{
     z-index: 2;
     color: var(--main-htextColor);
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 40px;
+    font-weight: bold;
     position: absolute;
     padding-top: 60px;
 }
@@ -219,7 +208,7 @@ section{
 
 main{
     align-content: center;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding-left: 70px;
     padding-right: 70px;
@@ -394,13 +383,11 @@ footer{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     border-top: none;
-    color:#f8f9fa;
-    
 }
 
 footer #about{
     padding: 50px;
-    color:#f8f9fa;
+    
 }
 
 
@@ -418,7 +405,7 @@ select{
     margin-left: auto;
     margin-right: auto;
     background-color: var(--main-hfilter2);
-    color: var(--main-htextColor);
+    color: var(--main-ttextColor);
     grid-area: 'sel';
 
 }
@@ -449,7 +436,7 @@ select{
 
 
 
-@media (max-width: 480px){
+@media (max-width: 450px){
     main{
         padding-left: 0px;
         padding-right: 0px;
@@ -537,7 +524,7 @@ select{
         transform: translate(-3px, 3px) rotate(-45deg);
     }
 
-    .dropdown.dropdown.isActive:hover span{
+    .dropdown.isActive:hover span{
         background-color: var(--main-htextColor1);
     }
 
