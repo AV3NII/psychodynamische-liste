@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XU Code Factory</title>
+    <title>Project Cost Evaluator</title>
 
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./teamStyle.css">
     <script src="./script.js"></script>
 
-
 </head>
-
 
 <body>
     <header>
@@ -22,9 +20,9 @@
             </a>
         
             <div class="menu">
-                <a href="#forderungen" class="isActive">Forderungen</a>
+                <a href="./index.html#forderungen">Forderungen</a>
                 <a href="./kandidat-innen.html">kandidat*innen</a>
-                <a href="./impressum.html">Impressum</a>
+                <a href="./impressum.html" class="isActive">Impressum</a>
                 <a href="mailto:some@student.xu-university.de">Contact</a>
             </div>
     
@@ -42,16 +40,16 @@
 
         <nav class="dropNav">
             <div id="dropNav" class="menu">
-                <a href="#forderungen" class="isActive">Forderungen</a>
+                <a href="./index.html#forderungen">Forderungen</a>
                 <a href="./kandidat-innen.html">kandidat*innen</a>
-                <a href="./impressum.html">Impressum</a>
+                <a href="./impressum.html" class="isActive">Impressum</a>
                 <a href="mailto:some@student.xu-university.de">Contact</a>
                 
             </div>
 
         </nav>
 
-    </header>        
+    </header>       
 
     <main>
         
@@ -80,98 +78,117 @@
             </section>
 
             <section id="about">
-                <h2>About Code Factory</h2>
-                <p>Code Factory is a 5 year old start-up wich is about to become an etablished company.<br> Over the past years we worked on several different projects concerning our services. <br> As a company we value work-life balance to funcion as productive as possible.<br> Our ideal leans on transparency, flexability and communication. <br><br> We offer the following services: </p>
+                <h2>Budget Planning</h2>
+                <p>This page is a cost estimation form. Click the images of the services you want to benefit of.<br> <br> Please note that the following three services cost per month.</p>
             </section>
 
             <section id="blankln">
                 <img src="/images/blankln.png">
             </section>
 
-            <section id="service" class="left-right">
-                <img src="./images/webdev.jpg" width="10">
+
+            <section class="grid">
+
+
+                <center>
+                    <div id ='option1' class="gridbox" >
+                        <img src="/images/appdev1.jpg">
+                        <h3>App Development</h3>
+                        
+                        <p>This service is about App-development of any kind. We will develop the app you have been always looking for. Note that the estimated cost could be to high, incase of a smaller budget.</p>
+                    </div>
+                </center>
+                <center>
+                    <div id ='option2' class="gridbox">
+                        <img src="/images/webdev.jpg">
+                        <h3>Web Development</h3>
+                        
+                        <p>This service is about Web-development of any kind. We will develop the side you have been always looking for. Note that the estimated cost could be to high, incase of a smaller budget.</p>
+                    </div>
+                </center>
+                <center>
+                    <div id ='option3' class="gridbox">
+                        <img src="/images/techsupport.jpg">
+                        <h3>Consulting</h3>
+                       
+                        <p>This service is about consultation. We offer a five day per week technical support. Our team will carry your project from start to finish and will give useful tips and insights. </p>
+                    </div>
+                </center>
+    
+    
+            </section>
+            
+            <section id="blankln">
+                <img src="/images/blankln.png">
+            </section>
+
+
+            <section id="option4" class="left-right">
+                <img src="./images/techsupport1.jpg" width="10">
                 <div id="text">
-                    <h2>Web-Development</h2>
-                    <p>Our bussines is to bring your idea and project to life.  We will develop the side you have been always looking for. Depending on your project we will find fitting work- and colaboration modes to suit your vision.</p>
+                    <h2>Tech-Support</h2>
+                    <p>This service is about a technical training (Onboarding) and support. <br> We offer a three day long technical introduction from a to z inorder to ensure a pleasent customer experience. <br><br> Please note that the following service costs once.</p>
                 </div>
             </section>
 
-
             <section id="blankln">
                 <img src="/images/blankln.png">
             </section>
-
 
             <section id="service" class="right-left">
                 
                 <div id="text">
-                    <h2>AppDev</h2>
-                    <p>Our vision is to develop your idea.  We will bring the App you have always wanted to life. Depending on your project we will find fitting work- and colaboration modes to suit your vision.</p>
+                    <h2>Choose Project Duration</h2>
+                    <p>Please pick a duration on how long you might need the selected services.  Please note that this is not final. Extenstions can be always requested.</p>
                 </div>
 
-                <img src="./images/appdev1.jpg" width="500">
+                <select id="months">
+                    <option value="1" selected>1 Month of service</option>
+                    <option value="2">2 Months of service</option>
+                    <option value="3">3 Months of service</option>
+                    <option value="4">4 Months of service</option>
+                    <option value="5">5 Months of service</option>
+                    <option value="6">6 Months of service</option>
+                    <option value="7">7 Months of service</option>
+                    <option value="8">8 Months of service</option>
+                    <option value="9">9 Months of service</option>
+                    <option value="10">10 Months of service</option>
+                    <option value="11">11 Months of service</option>
+                    <option value="12">12 Months of service</option>
+                </select>
 
             </section>
-        
 
             <section id="blankln">
                 <img src="/images/blankln.png">
             </section>
 
-            <section id="service" class="left-right">
-                <img src="./images/consult.jpg" width="500">
-                <div id="text">
-                    <h2>Tech Consulting</h2>
-                    <p>Most bigger projects come with a lot of requirements and parts wich are difficult to combine. With our consulting service we will ensure that all framworks and other necesities are functioning flawless. Furthermore we offer productive advices and ideas which might stepup our project.</p>
-                </div>
-
+            <section>
+                <div type="button" id="submit" onclick="submit()">submit</div>
             </section>
 
 
-        <section id="blankln">
-            <img id="forderungen" src="/images/blankln.png">
-        </section>
-
-        <section id="about">
-            <h2>Recent Projects</h2>
-            <p>Here is a small list of recent projects that we were able to accompany or develop. <br> <br>  If you face any questions to these projects, please feel free to reach out to us!<br> We are available eighter through the contact link via mail or through telefone  ( number below ).</p>
-        </section>
-
-
-        <section class="grid">
-
-
-            <center>
-                <div class="gridbox">
-                    <img src="/images//hardware-software-interface.jpg">
-                    <h3>Pcb-Web Interface</h3>
-                    <h4>IoT</h4>
-                    <p>We already developed multiple controlling interfaces.</p>
+            <section id="blankln" class="ans">
+                <img src="/images/blankln.png">
+            </section>
+            
+            
+            <section id="ans" class="right-left">
+                
+                <div>
+                    <h2>Required Budget</h2>
+                    <p>The price on the right is just an estimation. Real numbers might be variing.</p>
                 </div>
-            </center>
-            <center>
-                <div class="gridbox">
-                    <img src="/images/streaming-board.jpg">
-                    <h3>Streaming board</h3>
-                    <h4>App StreamControl</h4>
-                    <p>One of our more known projects is a streaming-deck as mobile app.</p>
+
+                <div>
+                    <h2>Estimated cost:</h2>
+                    <p id="priceTag"> 150.000 € </p>
                 </div>
-            </center>
-            <center>
-                <div class="gridbox">
-                    <img src="/images/techsupport.jpg">
-                    <h3>Infield techsupport</h3>
-                    <h4>Flexible support</h4>
-                    <p>Every project faces problems. We are able to opperate in any condition.</p>
-                </div>
-            </center>
 
+                
+            </section>
 
-        </section>
-
-        <section id="blankln">
-            <img src="/images/blankln.png">
-        </section>
+            
 
     </main>
     
