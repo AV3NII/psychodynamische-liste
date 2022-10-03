@@ -32,6 +32,8 @@
     --main-htextColor: #f8f9fa;
     --main-htextColor1: #acacac;
     --main-ttextColor: #000000;
+
+
 }
 
 :root.dark{
@@ -55,10 +57,16 @@
 *{
     font-family: 'cov_b', 'azo','Open Sans';
     color: var(--main-ttextColor);
+    
+    
 }
 body{
     background: var(--main-tbackground);
     margin: 0px;
+    font-size: 13px;
+    line-height: 1.7rem;
+    zoom: 90%;
+
 }
 
 .navbar{
@@ -67,12 +75,13 @@ body{
     align-items: center;
     
     max-height: 65px;
-    margin-left: 0;
-    margin-right: 0;
-    width: 95vw;
+    left: 0;
+    right: 0;
+    padding-left: 25px;
+    padding-right: 25px;
     z-index: 100;
     
-
+    opacity: 1;
     
     
 
@@ -83,12 +92,25 @@ body{
 
 }
 
-header svg{
+.logo{
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.logo.isActive, .logo:hover{
+    background-color: var(--main-hoverbg);
+    border-radius: 99px;
+    
+}
+
+header logo svg{
     position: relative;
     max-height: 65px;
+
     opacity: 1;
     filter: invert(0);
-    margin-left: 20px;
+    
 }
 
 nav button{
@@ -97,9 +119,11 @@ nav button{
 }
 
 nav .menu{
+    top: 10px;
     flex: 1 1 0%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 
     
 }
@@ -124,10 +148,11 @@ nav .menu a.isActive, nav .menu a:hover{
 .headWrap{
     display: flex;
     max-height: 40vh;
-    top: 0;
+    top: 0px;
     left: 0;
     right: 0;
     min-height: 250px;
+    
 
     background: var(--main-tbackground); /*.............................................. */
     position: relative;
@@ -144,7 +169,7 @@ nav .menu a.isActive, nav .menu a:hover{
     left: 0;
     right: 0;
     min-height: 250px;
-    opacity: 0.6;
+    opacity: 0.5;
     background: linear-gradient(to bottom, var(--main-hfilter), var(--main-hfilter2));
     position: absolute;
     background-position: center;
@@ -158,6 +183,7 @@ nav .menu a.isActive, nav .menu a:hover{
     color: var(--main-htextColor);
     font-size: 40px;
     font-weight: bold;
+    line-height: 1.7;
     position: absolute;
     padding-top: 60px;
 }
@@ -224,7 +250,7 @@ img{
 }
 
 .darkmode-switch{
-    
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -288,7 +314,7 @@ img{
     
     
     text-align: center;
-    
+    column-count: 2;
     
 }
 
@@ -305,6 +331,15 @@ img{
     max-width: 300px;
     width: 40vw;
     filter: invert(var(--main-placeholderfilter));
+}
+
+#introText{
+    display: block;
+    
+    padding-left: 50px ;
+    padding-right: 50px;
+    text-align: center;
+    column-count: 1;
 }
 
 .left-right {
@@ -436,18 +471,29 @@ select{
 
 
 
-@media (max-width: 450px){
+@media (max-width: 550px){
     main{
         padding-left: 0px;
         padding-right: 0px;
+    }
+
+
+    #introText{
+        padding: 0px;
     }
 }
 
 
 
-
-
-
+@media only screen and (max-width: 850px){
+    #about {
+        display: block;
+        
+        text-align: center;
+        column-count: 1;
+        
+    }
+}
 @media only screen and (max-width: 800px){
     .wrapper{
         grid-template-columns: 1fr;
@@ -462,7 +508,8 @@ select{
 
 
     main{
-        margin: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
 
@@ -535,6 +582,8 @@ select{
     #text{
         grid-area: text;
     }
+
+    
 
     .left-right, .right-left{
         display: grid;

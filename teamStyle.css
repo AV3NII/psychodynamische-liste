@@ -70,8 +70,8 @@
 
 @media (min-width: 550px){
     .grid{
-         margin-left: 120px;
-         margin-right: 120px;
+         margin-left: 80px;
+         margin-right: 80px;
     } 
     main{
         padding-left: 30px;
@@ -106,7 +106,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 980px) {
     .grid{
         display: grid;
         grid-gap: 50px;
