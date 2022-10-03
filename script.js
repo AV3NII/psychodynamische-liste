@@ -1,93 +1,34 @@
 
 
+
 var formAnswers = [false, false, false, false];
 
 
 window.onload=function(){
 
     const dropdown = document.querySelector('.dropdown');
-    const dropNav = document.getElementById('dropNav');
-    const option1 = document.getElementById('option1');
-    const option2 = document.getElementById('option2');
-    const option3 = document.getElementById('option3');
-    const option4 = document.getElementById('option4');
-    const select = document.getElementById('months');
+    const dropNav = document.getElementById('dropNav');;
 
-
-
+    
     dropdown.addEventListener('click', function (){
         this.classList.toggle('isActive');
         dropNav.classList.toggle('isActive');
     });
 
-    select.addEventListener('change', function (){
-        showAns(false);
-    });
-
-
-
-
-
-
-    option1.addEventListener('click', () =>{
-        formAnswers[0] = !formAnswers[0];
-        showAns(false);
-        if (formAnswers[0] == true){
-            option1.querySelector('img').src = './images/ticked.png';
-        }else{
-            option1.querySelector('img').src = './images/appdev1.jpg';
-        }
-
-    })
-
-
-
-    option2.addEventListener('click', () =>{
-        formAnswers[1] = !formAnswers[1];
-        showAns(false);
-        if (formAnswers[1] == true){
-            option2.querySelector('img').src = './images/ticked.png';
-        }else{
-            option2.querySelector('img').src = './images/webdev.jpg';
-        }
-
-    })
-
-    option3.addEventListener('click', () =>{
-        formAnswers[2] = !formAnswers[2];
-        showAns(false);
-        if (formAnswers[2] == true){
-            option3.querySelector('img').src = './images/ticked.png';
-        }else{
-            option3.querySelector('img').src = './images/techsupport.jpg';
-        }
-
-    });
-
-    option4.addEventListener('click', () =>{
-        formAnswers[3] = !formAnswers[3];
-        showAns(false);
-        if (formAnswers[3] == true){
-            option4.querySelector('img').src = './images/ticked.png';
-        }else{
-            option4.querySelector('img').src = './images/techsupport1.jpg';
-            
-        }
-
-    });
-
-
-
-
-
-
-
-
+    
 
 }
 
 
-
+function redirect(i){
+    if(i == 1){
+        location.replace('/forderungen.html')
+    }else if(i == 2){
+        location.replace('/erreicht.html')
+    }else if(i == 3){
+        location.replace('/kandidat-innen.html')
+    }
+}
 
 
 
@@ -95,6 +36,7 @@ function colorInvert(){
     
     var el = document.documentElement.classList;
     el.toggle("dark")
+    isLight = !isLight;
 
 }
 
