@@ -11,19 +11,32 @@
     grid-template-columns: 1fr;
     
 
-    
+    transition: transform 400ms ease;
 }
 
 .gridbox{
     text-align: flex;
     padding: 20px;
-    height: 400px;
+    height: 440px;
     border-radius: 5%;
     border-style: none;
     
     min-width: 225px;
-    
+    transition: transform 500ms ease-in;
 }   
+
+.gridbox:hover,.gridbox:focus-visible,.gridbox:active{
+
+    background-color: var(--main-sectionHighlight);
+    border-color: var(--main-sectionHighlight);
+    
+    border-radius: 20px;
+    
+    
+    animation: ease-in-out;
+
+}
+
 .light .gridbox{
     border-style: none;
 } 
@@ -35,6 +48,7 @@
     max-width: 210px;
     max-height: 210px;
     width: 100%;
+    height: 100%;
 
     
     border-style: solid;

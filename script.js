@@ -21,6 +21,7 @@ window.onload=function(){
 
 
 function redirect(i){
+     
     if(i == 1){
         location.replace('/forderungen.html')
     }else if(i == 2){

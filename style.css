@@ -33,7 +33,7 @@
     --main-htextColor1: #acacac;
     --main-ttextColor: #000000;
 
-
+    --main-sectionHighlight: #065a6024;
 }
 
 :root.dark{
@@ -52,6 +52,8 @@
     --main-htextColor: #f8f9fa;
     --main-htextColor1: #acacac;
     --main-ttextColor: #f9f9f9;
+
+    --main-sectionHighlight: #065a6024;
 }
 
 *{
@@ -348,6 +350,18 @@ img{
     
     gap: 60px;
     
+    transition: transform 400ms ease;
+    
+}
+.left-right:hover,.left-right:focus-within {
+    background-color: var(--main-sectionHighlight);
+    border-color: var(--main-sectionHighlight);
+    transform: scale(1.05);
+    border-radius: 40px;
+    padding: 50px;
+    
+    animation: ease-in-out;
+
 }
 
 
@@ -382,7 +396,19 @@ img{
     
     gap: 60px;
     
+    transition: transform 400ms ease;
+    
+}
 
+    .right-left:hover,.right-left:focus-visible, .right-left:active{
+    background-color: var(--main-sectionHighlight);
+    border-color: var(--main-sectionHighlight);
+    transform: scale(1.05);
+    border-radius: 40px;
+    padding: 50px;
+    
+    animation: ease-in-out;
+    
 }
 
 .right-left img {
@@ -406,6 +432,8 @@ img{
 
     
 }
+
+
 
 
 
