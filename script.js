@@ -31,6 +31,17 @@ function redirect(i){
     }
 }
 
+function detailedPersona(str){
+    if(str === 'dagmar-brunnhuber'){
+        location.replace('/kandidat-innen/'+ str + '.html')
+        console.log('/kandidat-innen/'+ str + '.html')
+    }else if(str == 2){
+        location.replace('/kandidat-innen/'+ str + '.html')
+    }else if(str == 3){
+        location.replace('/kandidat-innen/'+ str + '.html')
+    }
+}
+
 
 
 function colorInvert(){
