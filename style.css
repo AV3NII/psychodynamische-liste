@@ -436,6 +436,31 @@ img{
 
 
 
+.persona{
+    gap: 30px;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.persona img{
+    max-width: 270px;
+    border-radius: 30px;
+}
+
+.persona h1{
+    padding-left: 7%;
+}
+
+.persona h5{
+    padding-left: 7%;
+}
+
+.persona p{
+    padding-left: 7%;
+}
+
+
+
 
 
 footer{
