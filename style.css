@@ -43,7 +43,7 @@
     --main-hfilter: #1b3a4b;
     --main-hfilter2: #065a60;
     --main-placeholderfilter: 1;
-    --main-tbackground: #1f1f1f;
+    --main-tbackground: #032332;
 
     --main-hoverbg: #01465d;
 
@@ -53,7 +53,7 @@
     --main-htextColor1: #acacac;
     --main-ttextColor: #f9f9f9;
 
-    --main-sectionHighlight: #065a6024;
+    --main-sectionHighlight: #065a606a;
 }
 
 *{
@@ -65,9 +65,9 @@
 body{
     background: var(--main-tbackground);
     margin: 0px;
-    font-size: 13px;
+    
     line-height: 1.7rem;
-    zoom: 90%;
+    zoom: 80%;
 
 }
 
@@ -163,6 +163,7 @@ nav .menu a.isActive, nav .menu a:hover{
     
 
     background-size: cover;
+    background-position: center center;
 }
 
 .overlay{
@@ -359,8 +360,8 @@ img{
     transform: scale(1.05);
     border-radius: 40px;
     padding: 50px;
-    
-    animation: ease-in-out;
+    transition: 0.8s;
+    animation: ease-in;
 
 }
 
@@ -406,7 +407,7 @@ img{
     transform: scale(1.05);
     border-radius: 40px;
     padding: 50px;
-    
+    transition: 0.8s;
     animation: ease-in-out;
     
 }
@@ -437,7 +438,7 @@ img{
 
 
 .persona{
-    gap: 30px;
+    gap: 25px;
     padding-left: 7%;
     padding-right: 7%;
 }
@@ -447,16 +448,23 @@ img{
     border-radius: 30px;
 }
 
+.pCredentials{
+    max-height: 400px;
+}
+
 .persona h1{
     padding-left: 7%;
 }
 
 .persona h5{
-    padding-left: 7%;
+    line-height: 0.9rem;
+    color: var(--main-ttextColor);
+    opacity: 0.7;
+    
 }
 
 .persona p{
-    padding-left: 7%;
+    padding: 5px;
 }
 
 
@@ -547,7 +555,7 @@ select{
         
     }
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 750px){
     .wrapper{
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr 0.4fr 2fr 0.3fr;
@@ -653,6 +661,18 @@ select{
         
     }
 
+    .persona{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .pCredentials{
+        max-height: 400px;
+        text-align: center;
+    }
     
 
 

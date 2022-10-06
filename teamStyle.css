@@ -31,8 +31,8 @@
     border-color: var(--main-sectionHighlight);
     
     border-radius: 20px;
-    
-    
+    transform: scale(1.05);
+    transition: 1s;
     animation: ease-in-out;
 
 }
