@@ -438,6 +438,7 @@ img{
 
 
 .persona{
+    max-height: 400px;
     gap: 25px;
     padding-left: 7%;
     padding-right: 7%;
