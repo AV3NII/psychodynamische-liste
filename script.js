@@ -23,9 +23,9 @@ window.onload=function(){
 function redirect(i){
      
     if(i == 1){
-        location.replace('/forderungen.html')
+        location.replace('/ziele.html')
     }else if(i == 2){
-        location.replace('/erreicht.html')
+        location.replace('/rückblick.html')
     }else if(i == 3){
         location.replace('/kandidat-innen.html')
     }
