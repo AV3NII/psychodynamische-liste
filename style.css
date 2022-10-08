@@ -22,7 +22,8 @@
     --main-hfilter: #1b3a4b;
     --main-hfilter2: #065a60;
     --main-placeholderfilter: 0;
-    --main-tbackground: #03233249;
+    --main-tbackground: #03233247;
+    --main-buttonFill: #d5dadd;
 
     --main-hoverbg: #01465d4a;
 
@@ -46,6 +47,7 @@
     --main-hfilter2: #065a60;
     --main-placeholderfilter: 1;
     --main-tbackground: #032332;
+    --main-buttonFill: #032332;
 
     --main-hoverbg: #01465d;
 
@@ -313,7 +315,7 @@ img{
     height: 25px;
     width: 25px;
     border-radius: 100%;
-    background: var(--main-tbackground);
+    background: var(--main-buttonFill);
     transform: translateX(0);
     transition: 0.2s;
 
