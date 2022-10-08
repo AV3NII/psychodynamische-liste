@@ -185,7 +185,7 @@ nav .menu a.isActive, nav .menu a:hover{
     left: 0;
     right: 0;
     min-height: 250px;
-    opacity: 0.5;
+    opacity: 0.7;
     background: linear-gradient(to bottom, var(--main-hfilter), var(--main-hfilter2));
     position: absolute;
     box-shadow: 0px 0px 100px 0px;

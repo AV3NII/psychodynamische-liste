@@ -48,7 +48,7 @@ function colorInvert(){
     
     var el = document.documentElement.classList;
     el.toggle("dark")
-    isLight = !isLight;
+    
 
 }
 
