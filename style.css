@@ -22,9 +22,9 @@
     --main-hfilter: #1b3a4b;
     --main-hfilter2: #065a60;
     --main-placeholderfilter: 0;
-    --main-tbackground: #f9f9f9;
+    --main-tbackground: #0323323b;
 
-    --main-hoverbg: #01465d;
+    --main-hoverbg: #01465d4a;
 
     --main-bordercolor: #413e3eb1;
 
@@ -34,6 +34,8 @@
     --main-ttextColor: #000000;
 
     --main-sectionHighlight: #065a6024;
+    --bgTexture: url(./images/textur1invert.png)
+    
 }
 
 :root.dark{
@@ -54,6 +56,9 @@
     --main-ttextColor: #f9f9f9;
 
     --main-sectionHighlight: #032a2cca;
+
+    --bgTexture: url(./images/textur1.png)
+    
 }
 
 *{
@@ -64,7 +69,7 @@
 }
 body{
     background: var(--main-tbackground);
-    background-image: url(./images/muster2.png);
+    background-image:  var(--bgTexture);
     
     margin: 0px;
     
@@ -177,6 +182,8 @@ nav .menu a.isActive, nav .menu a:hover{
     opacity: 0.5;
     background: linear-gradient(to bottom, var(--main-hfilter), var(--main-hfilter2));
     position: absolute;
+    box-shadow: 0px 0px 100px 0px;
+    color: #000000;
     background-position: center;
     background-size: cover;
 
@@ -230,7 +237,7 @@ nav .menu a.isActive, nav .menu a:hover{
 
 section{
     
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     
@@ -327,7 +334,7 @@ img{
 
 
 #blankln{
-    
+    display: flex;
     margin-bottom: 20px;
     margin-top: 10px;
 }
@@ -440,6 +447,7 @@ img{
 
 
 .persona{
+    display: flex;
     gap: 25px;
     padding-left: 7%;
     padding-right: 7%;
@@ -483,8 +491,9 @@ footer{
     border-top: none;
 }
 
-footer #about{
+footer p{
     padding: 50px;
+    text-align: center;
     
 }
 
