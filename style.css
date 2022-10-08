@@ -22,10 +22,12 @@
     --main-hfilter: #1b3a4b;
     --main-hfilter2: #065a60;
     --main-placeholderfilter: 0;
-    --main-tbackground: #03233247;
+    --main-tbackground: #032332;
+    
+    --main-textureBG: #03233249;
     --main-buttonFill: #d5dadd;
 
-    --main-hoverbg: #01465d4a;
+    --main-hoverbg: #01465d;
 
     --main-bordercolor: #413e3eb1;
 
@@ -35,7 +37,7 @@
     --main-ttextColor: #000000;
 
     --main-sectionHighlight: #065a6024;
-    --bgTexture: url(./images/textur1invert.png)
+    --bgTexture: url(./images/textur1invert.png);
     
 }
 
@@ -47,6 +49,8 @@
     --main-hfilter2: #065a60;
     --main-placeholderfilter: 1;
     --main-tbackground: #032332;
+
+    --main-textureBG: #032332;
     --main-buttonFill: #032332;
 
     --main-hoverbg: #01465d;
@@ -59,7 +63,7 @@
 
     --main-sectionHighlight: #032a2cca;
 
-    --bgTexture: url(./images/textur1.png)
+    --bgTexture: url(./images/textur1.png);
     
 }
 
@@ -70,7 +74,7 @@
     
 }
 body{
-    background: var(--main-tbackground);
+    background: var(--main-textureBG);
     background-image:  var(--bgTexture);
     
     margin: 0px;
