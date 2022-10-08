@@ -37,7 +37,7 @@
     --main-ttextColor: #000000;
 
     --main-sectionHighlight: #065a6024;
-    --bgTexture: url(./images/textur1invert.png)
+    --bgTexture: url(./images/textur1invert.png);
     
 }
 
@@ -63,7 +63,7 @@
 
     --main-sectionHighlight: #032a2cca;
 
-    --bgTexture: url(./images/textur1.png)
+    --bgTexture: url(./images/textur1.png);
     
 }
 
