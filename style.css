@@ -35,9 +35,10 @@
     --main-htextColor: #f8f9fa;
     --main-htextColor1: #acacac;
     --main-ttextColor: #000000;
+    --main-hHover: #03233290;
 
     --main-sectionHighlight: #065a6024;
-    --bgTexture: url(./images/textur1invert.png);
+    --bgTexture: url(./images/textur1Invert.png);
     
 }
 
@@ -60,6 +61,7 @@
     --main-htextColor: #f8f9fa;
     --main-htextColor1: #acacac;
     --main-ttextColor: #f9f9f9;
+    --main-hHover: #03233290;
 
     --main-sectionHighlight: #032a2cca;
 
@@ -110,12 +112,14 @@ body{
 .logo{
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 70px;
+    margin-top: 25px;
+    padding: 10px;
 }
 
 .logo.isActive, .logo:hover{
-    background-color: var(--main-hoverbg);
-    border-radius: 99px;
+    background-color: var(--main-hHover);
+    border-radius: 10px;
     
 }
 
@@ -155,7 +159,7 @@ nav .menu a{
 }
 
 nav .menu a.isActive, nav .menu a:hover{
-    background-color: var(--main-hoverbg);
+    background-color: var(--main-hHover);
     color: var(--main-htextColor1);
 }
 
