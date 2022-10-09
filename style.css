@@ -24,6 +24,8 @@
     --main-placeholderfilter: 1;
     --main-tbackground: #ffd291;
 
+    --main-shadow: #fff;
+
     --main-textureBG: #1a3d5967;
     --main-buttonFill: #ffd291;
 
@@ -49,6 +51,8 @@
     --main-hfilter2: #94320b;
     --main-placeholderfilter: 1;
     --main-tbackground: #58220d;
+
+    --main-shadow: #000;
 
     --main-textureBG: #1a3d59;
     --main-buttonFill: #58220d;
@@ -192,7 +196,7 @@ nav .menu a.isActive, nav .menu a:hover{
     background: linear-gradient(to bottom, var(--main-hfilter), var(--main-hfilter2));
     position: absolute;
     box-shadow: 0px 0px 100px 0px;
-    color: #000000;
+    color: var(--main-shadow);
     background-position: center;
     background-size: cover;
 
