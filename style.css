@@ -46,24 +46,24 @@
     --main-radius: 5px;
     --main-padding:10px;
 
-    --main-hfilter: #1b3a4b;
-    --main-hfilter2: #065a60;
+    --main-hfilter: #1a3d59;
+    --main-hfilter2: #94320b;
     --main-placeholderfilter: 1;
-    --main-tbackground: #032332;
+    --main-tbackground: #58220d;
 
-    --main-textureBG: #032332;
-    --main-buttonFill: #032332;
+    --main-textureBG: #1a3d59;
+    --main-buttonFill: #58220d;
 
-    --main-hoverbg: #01465d;
+    --main-hoverbg: #b33a08;
 
-    --main-bordercolor: #cecacaa4;
+    --main-bordercolor: #111921;
 
-    --main-htextColor: #f8f9fa;
-    --main-htextColor1: #acacac;
+    --main-htextColor: #f9ded3;
+    --main-htextColor1: #f1bda9;
     --main-ttextColor: #f9f9f9;
-    --main-hHover: #03233290;
+    --main-hHover: #94320b;
 
-    --main-sectionHighlight: #032a2cca;
+    --main-sectionHighlight: #b33a08b3;
 
     --bgTexture: url(./images/textur1.png);
     
@@ -339,6 +339,13 @@ img{
     column-count: 2;
     
 }
+.block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+}
 
 
 
@@ -499,10 +506,13 @@ footer{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     border-top: none;
+
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 footer p{
-    padding: 50px;
+    
     text-align: center;
     
 }
