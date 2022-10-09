@@ -478,9 +478,6 @@ img{
     border-radius: 30px;
 }
 
-.pCredentials{
-    max-height: 450px;
-}
 
 .persona h1{
     padding-left: 7%;
@@ -705,8 +702,7 @@ select{
         justify-content: center;
     }
     
-    .pCredentials{
-        max-height: 400px;
+    .pCredentials p{
         text-align: center;
     }
     
