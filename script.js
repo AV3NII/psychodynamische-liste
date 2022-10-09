@@ -35,9 +35,15 @@ function detailedPersona(str){
     if(str === 'dagmar-brunnhuber'){
         location.replace('/kandidat-innen/'+ str + '.html')
         console.log('/kandidat-innen/'+ str + '.html')
-    }else if(str == 2){
+    }else if(str == 'thomas-schneider'){
         location.replace('/kandidat-innen/'+ str + '.html')
-    }else if(str == 3){
+    }else if(str == 'martina-scharrer'){
+        location.replace('/kandidat-innen/'+ str + '.html')
+    }else if(str == 'martin-czajka'){
+        location.replace('/kandidat-innen/'+ str + '.html')
+    }else if(str == 'anja-lorenz'){
+        location.replace('/kandidat-innen/'+ str + '.html')
+    }else if(str == 'dietrich-winzer'){
         location.replace('/kandidat-innen/'+ str + '.html')
     }
 }
