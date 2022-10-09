@@ -19,25 +19,24 @@
     --main-radius: 5px;
     --main-padding:10px;
 
-    --main-hfilter: #1b3a4b;
-    --main-hfilter2: #065a60;
-    --main-placeholderfilter: 0;
-    --main-tbackground: #032332;
-    
-    --main-textureBG: #03233249;
-    --main-buttonFill: #d5dadd;
+    --main-hfilter: #dfe8f4;
+    --main-hfilter2: #ffb445;
+    --main-placeholderfilter: 1;
+    --main-tbackground: #ffd291;
 
-    --main-hoverbg: #01465d;
+    --main-textureBG: #1a3d5967;
+    --main-buttonFill: #ffd291;
 
-    --main-bordercolor: #413e3eb1;
+    --main-hoverbg: #fea605;
 
+    --main-bordercolor: #dfe8f4;
 
-    --main-htextColor: #f8f9fa;
-    --main-htextColor1: #acacac;
-    --main-ttextColor: #000000;
-    --main-hHover: #03233290;
+    --main-htextColor: #2b1e0d;
+    --main-htextColor1: #503613;
+    --main-ttextColor: #2b1e0d;
+    --main-hHover: #ffb445;
 
-    --main-sectionHighlight: #065a6024;
+    --main-sectionHighlight: #fea605bf;
     --bgTexture: url(./images/textur1Invert.png);
     
 }
