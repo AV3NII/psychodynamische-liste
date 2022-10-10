@@ -45,7 +45,12 @@ function detailedPersona(str){
         location.replace('/kandidat-innen/'+ str + '.html')
     }else if(str == 'dietrich-winzer'){
         location.replace('/kandidat-innen/'+ str + '.html')
+    }else if(str == 'regina-pielmeier'){
+        location.replace('/kandidat-innen/'+ str + '.html')
+    }else if(str == 'regina-eisner'){
+        location.replace('/kandidat-innen/'+ str + '.html')
     }
+    
 }
 
 
