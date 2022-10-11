@@ -26,7 +26,7 @@
 
     --main-shadow: #fff;
 
-    --main-textureBG: #1a3d593e;
+    --main-textureBG: #1a3d591b;
     --main-buttonFill: #ffd291;
 
     --main-hoverbg: #fea605;
@@ -54,7 +54,7 @@
 
     --main-shadow: #000;
 
-    --main-textureBG: #1a3d59;
+    --main-textureBG: #14212e;
     --main-buttonFill: #58220d;
 
     --main-hoverbg: #b33a08;
@@ -245,6 +245,13 @@ nav .menu a.isActive, nav .menu a:hover{
 .dropNav .menu a.isActive, nav .menu a:hover{
     background-color: var(--main-hoverbg);
     color: var(--main-htextColor1);
+}
+
+cookie-banner{
+    position: fixed;
+    display: flex;
+    background-color: var(--bgTexture);
+
 }
 
 
@@ -622,7 +629,6 @@ select{
         position: relative;
         z-index: 1;
         margin-left: 15px;
-        user-select: none;
 
         appearance: none;
         border: none;
