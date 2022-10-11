@@ -22,6 +22,7 @@ class CookieBanner extends HTMLElement {
                 right: 0;
                 bottom: 0;
                 background-color: #121212;
+                color: #bababa;
                 flex-direction: column;
                 text-align: center;
             }
