@@ -342,8 +342,7 @@ img{
 
 
 #about {
-    display: block;
-    
+    display: flex;
     
     text-align: center;
     column-count: 2;
