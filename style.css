@@ -343,11 +343,11 @@ img{
 
 #about {
     display: flex;
-    
+    flex-direction: column;
     text-align: center;
-    column-count: 2;
-    
+    column-count: 1;
 }
+
 .block{
     display: flex;
     flex-direction: row;
