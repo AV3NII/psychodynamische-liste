@@ -17,7 +17,7 @@ class CookieBanner extends HTMLElement {
         style.textContent = `
             .cookie-banner{
                 position: fixed;
-                display: block;
+                display: flex;
                 left: 0;
                 right: 0;
                 bottom: 0;
@@ -25,17 +25,29 @@ class CookieBanner extends HTMLElement {
                 color: #bababa;
                 flex-direction: column;
                 text-align: center;
+                align-items: center;
+            }
+            .cookie-banner div{
+                max-width: 300px;
+            }
+            a{
+                text-decoration: non ;
+                color: var(--main-sectionHighlight);
+            }
+            h3{
+                color: var(--main-sectionHighlight);
             }
             .hidden{
             display:none;
             
             }
+            
             button{
                 max-width: 150px;
                 justify-self: center;
             }
             .green{
-            background-color:green;
+            background-color: var(--main-sectionHighlight);
             color:white;
             
             }
@@ -48,17 +60,21 @@ class CookieBanner extends HTMLElement {
         const template = document.createElement('template');
         template.innerHTML = `
         <div class="cookie-banner ${bannerState}">
-            <slot name="title"><h3>Cookie akzeptieren</h3></slot>
-            <slot name="text"><p>Wir verwenden cookies weil das so ist</p></slot>
-            <p class="cookie-sources">
-                <label><input type="checkbox" name="required" disabled checked> Notwendige</label>
-                <label><input type="checkbox" name="statistics">Statistiken</label>
-                <label><input type="checkbox" name="marketing">Marketing</label>
-            </p>
-            <center>
-            <button class="confirm">Auswahl bestätigen</button>
-            <button class="green">Alle bestätigen</button>
-            </center>
+            <div>
+                <slot name="title"><h3>Cookies akzeptieren</h3></slot>
+                <slot name="text"><p>Um die optimale Nutzung unserer Website zu ermöglichen, verwenden wir Cookies. Um nicht gegen geltende Gesetze zu versto&beta;en, benötigen wir dazu Ihr ausdrückliches Einverständnis.<br>
+                 Weitere Informationen dazu finden sie 
+                <a href="./impressum.html#IONOS">hier<a></p></slot>
+                <center>
+                <p class="cookie-sources">
+                    <label><input type="checkbox" name="required" disabled checked> Notwendige</label>
+                </p>
+                </center>
+                <center>
+                <button class="confirm">Ablehnen</button>
+                <button class="green">Bestätigen</button>
+                </center>
+            <div>
         </div>
         `;
 
