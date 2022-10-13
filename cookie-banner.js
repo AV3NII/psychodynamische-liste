@@ -21,8 +21,8 @@ class CookieBanner extends HTMLElement {
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: #121212;
-                color: #bababa;
+                background-color: var(--main-hfilter);
+                color: var(--main-ttectColor);
                 flex-direction: column;
                 text-align: center;
                 align-items: center;
