@@ -18,7 +18,9 @@ window.onload=function(){
     let GetTheme = JSON.parse(localStorage.getItem("PageTheme"));
 
     if (GetTheme === "LIGHT"){
-        document.documentElement.classList.toggle('dark')
+        document.documentElement.classList.toggle('dark');
+        let trigger = document.getElementsByName("toggle-darkmode");
+        trigger[0].checked = !trigger[0].checked
     }
 
 }
