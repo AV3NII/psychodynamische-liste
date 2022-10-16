@@ -15,7 +15,11 @@ window.onload=function(){
         dropNav.classList.toggle('isActive');
     });
 
-    
+    let GetTheme = JSON.parse(localStorage.getItem("PageTheme"));
+
+    if (GetTheme === "LIGHT"){
+        document.documentElement.classList.toggle('dark')
+    }
 
 }
 
@@ -55,11 +59,28 @@ function detailedPersona(str){
 
 
 
-function colorInvert(){
+function darkmode(){
     
     var el = document.documentElement.classList;
-    el.toggle("dark")
+    el.toggle("dark");
 }
+
+function colorInvert(){
+    var SetTheme = document.documentElement;
+
+    SetTheme.classList.toggle("dark");
+
+    var theme;
+
+    if(SetTheme.classList.contains('dark')){
+        theme = "DARK";
+    }else{
+        theme = "LIGHT";
+    }
+
+    localStorage.setItem("PageTheme", JSON.stringify(theme));
+}
+
 
 
 
